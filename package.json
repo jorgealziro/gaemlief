@@ -1,0 +1,23 @@
+{
+  "name": "gaemlief",
+  "version": "1.0.0",
+  "description": "Easier in Python? Yes. Do I hate myself? Also yes. Game of Life in node.js using p5.js and TDD just for the kicks and giggles",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jorgealziro/gaemlief.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jorgealziro/gaemlief/issues"
+  },
+  "homepage": "https://github.com/jorgealziro/gaemlief#readme",
+  "dependencies": {
+    "jest": "^27.0.5"
+  }
+}

@@ -4,7 +4,7 @@
   "description": "Easier in Python? Yes. Do I hate myself? Also yes. Game of Life in node.js using p5.js and TDD just for the kicks and giggles",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",

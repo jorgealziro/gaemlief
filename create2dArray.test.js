@@ -7,3 +7,8 @@ test('It creates an array',() => {
 test('It creates an array of arrays',() => {
     expect(create2dArray()[0]).toBeInstanceOf(Array);
 });
+
+test('It creates a 2D array of n rows',() => {
+    const n = 10;
+    expect(create2dArray(n)).toHaveLength(n);
+});

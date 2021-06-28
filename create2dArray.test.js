@@ -12,3 +12,9 @@ test('It creates a 2D array of n rows',() => {
     const n = 10;
     expect(create2dArray(n)).toHaveLength(n);
 });
+
+test('It creates a 2D array of n rows and m columns',() => {
+    const n = 10;
+    const m = 20;
+    expect(create2dArray(n, m)[0]).toHaveLength(m);
+});

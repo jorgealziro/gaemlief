@@ -18,3 +18,15 @@ test('It creates a 2D array of n rows and m columns',() => {
     const m = 20;
     expect(create2dArray(n, m)[0]).toHaveLength(m);
 });
+
+test('It populates columns with random zeros and ones',() => {
+    for (column of create2dArray()){
+        for (cell of column){
+            try {
+                expect(cell).toBe(1);
+            } catch {
+                expect(cell).toBe(0);
+            }
+        }
+    }
+});

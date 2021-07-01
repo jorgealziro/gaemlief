@@ -30,3 +30,19 @@ test('It populates columns with random zeros and ones',() => {
         }
     }
 });
+
+test('It generates a grid of at least 10 rows when number of rows is undefined',() => {
+    expect(create2dArray().length).toBeGreaterThan(9);
+});
+
+test('It generates a grid of at least 10 columns when number of columns is undefined',() => {
+    expect(create2dArray()[0].length).toBeGreaterThan(9);
+});
+
+test('It throws an error if user tries to define a number of rows of less than 10',() => {
+    expect(() => create2dArray(5)).toThrow('Grid must be of at least 10x10');
+});
+
+test('It throws an error if user tries to define a number of columns of less than 10',() => {
+    expect(() => create2dArray(undefined, 5)).toThrow('Grid must be of at least 10x10');
+});

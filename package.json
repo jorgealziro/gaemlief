@@ -17,7 +17,7 @@
     "url": "https://github.com/jorgealziro/gaemlief/issues"
   },
   "homepage": "https://github.com/jorgealziro/gaemlief#readme",
-  "dependencies": {
-    "jest": "^27.0.5"
+  "devDependencies": {
+    "jest": "^27.0.6"
   }
 }

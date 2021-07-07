@@ -18,10 +18,10 @@ test('It sums neighbor cells of the inner cell of a 3x3 grid',() => {
     function sum2DArr(grid3x3){
         let sum = 0;
         for (column of grid3x3){
-        for (cell of column){
+            for (cell of column){
                 sum += cell;
+            }
         }
-    }
  
         return sum;
     }

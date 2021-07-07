@@ -5,7 +5,6 @@ const singleCellGrid = [[Math.round(Math.random()),Math.round(Math.random()),Mat
 [Math.round(Math.random()),Math.round(Math.random()),Math.round(Math.random())]];
 
 test('It ensures sum of neighbor cells is a number',() => {
-    
     expect(applyGameRules.checkNeighborSum(singleCellGrid)).toEqual(expect.any(Number));
 })
 

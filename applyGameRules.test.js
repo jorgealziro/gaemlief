@@ -24,3 +24,20 @@ test('It sums neighbor cells of the inner cell of a 3x3 grid',() => {
 
     expect(applyGameRules.checkNeighborSum(singleCellGrid)).toEqual(sum2DArr(singleCellGrid) - innerCell);
 })
+
+test('Iterator function counts number of inner cells of a 2d array',() => {
+    const testGrid = create2DArray();
+
+    function elementCounter(grid){
+        let count = 0;
+        for (let i = 1; i < grid.length - 1; i++ ){
+            for (let j = 1; j < grid[0].length - 1; j++ ){
+                count += 1;
+            }
+        }
+        return count;
+    }
+
+    expect(applyGameRules.cellIterator(testGrid)[0]).toEqual(elementCounter(testGrid));
+})
+

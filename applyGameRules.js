@@ -10,6 +10,15 @@ const applyGameRules = {
         }
         return sum - middleCell;
 
+    },
+    cellIterator: (grid) => {
+        let count = 0;
+        for (let i = 1; i < grid.length - 1; i++ ){
+            for (let j = 1; j < grid[0].length - 1; j++ ){
+                count += 1;
+            }
+        }
+        return [count];
     }
 }
 
